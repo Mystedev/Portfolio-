@@ -1,0 +1,20 @@
+.hard-skills-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title-hard-skills{
+    font-size: 3rem;
+}
+.skill{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in;
+    margin: 0.5rem;
+    border-radius: 34px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 212, 109);
+    font-weight: 600;
+}
