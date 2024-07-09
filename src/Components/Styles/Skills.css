@@ -1,20 +1,45 @@
-.hard-skills-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.title-hard-skills{
-    font-size: 3rem;
-}
-.skill{
-    cursor: pointer;
-    padding: 0.5rem 1rem;
+
+.card-container{
+    padding: 15px;
+    border-radius: 12px;
+    margin: 0px;
     transition: all 0.2s ease-in;
-    margin: 0.5rem;
-    border-radius: 34px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    background-color: rgb(226, 212, 109);
-    font-weight: 600;
+    cursor: pointer;
+    font-weight: bold;
+    &&:hover{
+        transform: translateY(-12px);
+        box-shadow: 0 10px 20px rgb(0, 0, 0);
+        text-transform:uppercase;
+    }
+    .titles-skills{
+        color: rgba(244, 217, 136, 0.902);
+        font-size: 2rem;
+        margin: 0px;
+    }
+    .card-skills{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0px;
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 1rem;
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+        }
+    }
+    /*ANIMATIONS*/
+    animation: Appear 1.1s ease-in;
+}
+/*Animation for make the card appear while the user scroll the page*/
+@keyframes Appear {
+    from{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

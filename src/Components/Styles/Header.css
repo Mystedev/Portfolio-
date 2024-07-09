@@ -1,0 +1,18 @@
+.header-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+  }
+  .index-section{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in;
+    margin: 0.5rem;
+    cursor: pointer;
+    margin-top: 0px
+  }
+  .index-section:hover{
+    color: rgb(247, 211, 128);
+  }

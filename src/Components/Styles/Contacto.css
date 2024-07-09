@@ -1,0 +1,33 @@
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    h3{
+        font-size: 3.5rem;
+        background: linear-gradient(90deg,#fbc07c,#96064e);
+            text-shadow: none;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        animation: ColorTitle 1s  ease-in;
+        padding: 4px;
+        align-items: center;
+        display: flex;
+        gap: 6px;
+    }
+    .info a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s ease-in;
+        margin: 0.5rem;
+        cursor: pointer;
+        margin-top: 0px;
+        border-radius: 12px;
+        border: 1px solid rgba(82, 82, 81, 0.302);
+        background: rgba(57, 57, 57, 0.251);
+    }
+    .info a:hover{
+        color: rgb(247, 211, 128);
+    }
+}
