@@ -10,10 +10,6 @@ import Sobre_mi from './Components/Sobre-Mi'
 // Hooks
 import { useState } from 'react'
 function App(){
-  //Mostrar o ocultar el contenido de la sección experiencia
-  let isUsed = false
-  let isReady = true
-  //Renderizado de la página 'Portfolio'
   //Eventos del DOM
   window.addEventListener('blur', () => {
     setTimeout((
@@ -23,6 +19,10 @@ function App(){
   window.addEventListener('focus', () => {
     document.title = 'Portfolio-Dennys'
   })
+  //Mostrar o ocultar el contenido de la sección experiencia
+  let isUsed = false
+  let isReady = true
+  //Renderizado de la página 'Portfolio'
   return (
     <main className='custom-app'>
       <Header />
