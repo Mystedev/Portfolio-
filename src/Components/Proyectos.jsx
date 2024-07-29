@@ -1,8 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
+import './Styles/Proyectos.css'
 
 function Proyectos() {
   return (
-    <div>Proyectos</div>
+    <section className='projects-section'>
+      
+    </section>
   )
 }
 

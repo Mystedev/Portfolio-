@@ -6,7 +6,8 @@ import Presentacion from './Components/Presentacion'
 import Skills from './Components/Hard-Skills'
 import Header from './Components/Header'
 import Experiencia from './Components/Experiencia'
-import Sobre_mi from './Components/Sobre-Mi'
+import Contacto from './Components/Contacto'
+import Proyectos from './Components/Proyectos'
 // Hooks
 import { useState } from 'react'
 function App(){
@@ -17,28 +18,35 @@ function App(){
     ),1500)
   })
   window.addEventListener('focus', () => {
-    document.title = 'Portfolio-Dennys'
+    document.title = 'dennys.dev'
   })
   //Mostrar o ocultar el contenido de la sección experiencia
-  let isUsed = false
-  let isReady = true
+  const [showExperiencia] = useState(true)
+  const [showPresentacion] = useState(true)
   //Renderizado de la página 'Portfolio'
   return (
     <main className='custom-app'>
-      <Header />
+      <Header 
+      section1="Presentacion" 
+      section2="Experiencia" 
+      section3="Skills" 
+      section4="Contacto"
+      section5="Proyectos"
+    />
       <section className='introduction-section'>
-        {isReady ? ( <Presentacion /> ) : ('')}
-        {isUsed && <Experiencia 
-          position="Tecnico de redes y hardware"
-          data="5/1/2020 - 20/6/2020" 
-          description="Mantenimiento de equipos y software, 
-          gestión y administración de redes y reparación de equipos dañados. 
-          Me ocupaba de conectar entre si una serie de equipos para estudiar mediante redes con IPs estáticas" 
-        />}
-        <div className='skills-section'>
-          <Skills isUsed = {true} Title="Backend" />
-          <Skills isUsed = {true} Title="Frontend" />
-          <Skills isUsed = {true} Title="Databases" />
+        {showPresentacion ? ( <Presentacion /> ) : ('')}
+        {showExperiencia ? 
+        (<Experiencia 
+          position="Tecnico de redes y hardware 💻" 
+          data="5/1/2020 - 20/6/2020" />)
+         : 
+         ('')
+        }
+        <div className='projects-section'>
+
+        </div>
+        <div className='contact-section'>
+          <Contacto />
         </div>
       </section>
     </main>

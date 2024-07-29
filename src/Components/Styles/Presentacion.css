@@ -12,8 +12,8 @@
     justify-items: center;
 }
 .title-presentacion{
-    font-size: 3.5rem;
-    background: linear-gradient(90deg,#fbc07c,#96064e);
+    font-size: 3rem;
+    background: linear-gradient(90deg,#ae70efde,#12e9ed);
         text-shadow: none;
         background-clip: text;
         -webkit-background-clip: text;
@@ -70,6 +70,8 @@ span{
     position: relative;
     font-family: 'Cascadia Code';
     border-radius: 8em;
+    font-weight: bold;
+    height: 32px;
     overflow: hidden;
     transition: all 0.3s;
     line-height: 1.4em;

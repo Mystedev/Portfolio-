@@ -4,12 +4,12 @@
   align-items: center;
   flex-direction: column;
   margin:0px;
-  gap: 90px;
+  gap: 80px;
 }
 
 .introduction-section{
   display:grid;
-  gap: 90px;
+  gap: 30px;
   animation: Appear 1.1s ease-in;
 }
 @keyframes Appear{
@@ -24,5 +24,8 @@
 }
 .skills-section{
   display:flex;
-  gap: 45px;
+  gap: 40px;
+}
+.contact-section{
+  margin-top: 0px;
 }

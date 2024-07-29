@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import './Styles/Experiencia.css'
 
-function Experiencia({ data,position,description}) {
+function Experiencia({ data,position}) {
   return (
     <div className='section-experiencia'>
       <h1 className='title-intro'>Experiencia laboral</h1>
@@ -11,7 +11,10 @@ function Experiencia({ data,position,description}) {
           <h3 className='title-experience'>{data}</h3>
           <h4 className='about-work'>{position}</h4>
         </div>
-        <p className='description'>{description}</p>
+        <p className='description'>Mantenimiento de equipos y software, 
+          gestión y administración de redes y reparación de equipos dañados. 
+          Me ocupaba de conectar entre si una serie de equipos de una sala de estudio mediante 
+          redes con IPs estáticas y administrar todo el entorno de red.</p>
       </div>
     </div>
   )

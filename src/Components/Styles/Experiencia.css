@@ -1,10 +1,41 @@
-p{
-    font-size: 18px;
-    margin: 0px;
-}
 .section-experiencia{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 650px;
+    h1{
+        font-size: 2.3rem;
+        background: linear-gradient(90deg,#ae70efde,#12e9ed);
+        text-shadow: none;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid rgba(45, 45, 45, 0.71);
+        border-radius: 12px;
+        padding: 15px;
+        background: transparent;
+        backdrop-filter: blur(140px);
+        .card-experience{
+            h3{
+                font-size: 1.5rem;
+                color: rgba(255, 255, 255, 0.937);
+            }
+            h4{
+                font-size: 1.2rem;
+                color: rgba(242, 173, 116, 0.937);
+            }
+        }
+        .description{
+            font-size: 19px;
+        }
+    }
+    p{
+        font-size: 18px;
+        margin: 0px;
+    }
 }
