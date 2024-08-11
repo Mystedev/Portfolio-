@@ -5,6 +5,7 @@ import './Styles/Presentacion.css'
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from 'react-icons/fa';
+import { FaRegUser } from "react-icons/fa";
 
 const Presentacion = () => {
     //Objetos de Redes sociales
@@ -16,7 +17,7 @@ const Presentacion = () => {
             <img src="" alt="" />
             <button  className='btn-presentacion'>Disponible para trabajar</button>
         </div>
-        <h1 className='title-presentacion'>Hey, soy Dennys</h1>
+        <h1 className='title-presentacion'>Hey, soy Dennys <FaRegUser id="user-icon" /></h1>
         <p>Desarrollador de Software siempre en busca de nuevos conocimientos y desafíos con una fuerte base en el <span>Backend</span> y conocimientos avanzados en el <span>Frontend</span>, puedo abordar casi cualquier producto digital y crear <span>soluciones eficientes.</span> </p>
         <div className="social-network-direct">
             <a className='socials' href="#">{Social_Network.linkedin}<BsLinkedin /></a>

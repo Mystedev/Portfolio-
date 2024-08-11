@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import './Styles/Experiencia.css'
+import { MdOutlineWork } from "react-icons/md";
 
 function Experiencia({ data,position}) {
   return (
     <div className='section-experiencia'>
-      <h1 className='title-intro'>Experiencia laboral</h1>
+      <h1 className='title-intro'>Experiencia laboral <MdOutlineWork id='work-exprience' /></h1>
       <div className='introduction'>
         <div className='card-experience'>
           <h3 className='title-experience'>{data}</h3>

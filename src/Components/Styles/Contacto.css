@@ -3,12 +3,12 @@
     flex-direction: column;
     h3{
         font-size: 2.5rem;
-        background: linear-gradient(90deg,#ae70efde,#12e9ed);
+        background: linear-gradient(90deg,#ffffffde,#12e9ed);
             text-shadow: none;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        animation: ColorTitle 1s  ease-in;
+        animation: animation 1s  ease-in;
         padding: 4px;
         align-items: center;
         display: flex;

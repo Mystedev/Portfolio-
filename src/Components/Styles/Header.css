@@ -11,8 +11,28 @@
     transition: all 0.2s ease-in;
     margin: 0.5rem;
     cursor: pointer;
-    margin-top: 0px
+    margin-top: 0px;
+    border-bottom: 0px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
   .index-section:hover{
     color: rgb(247, 211, 128);
+  }
+  .btn-dark-lgith-theme{
+    background-color: transparent;
+    border: 0px;
+    &:hover{
+        cursor: pointer;
+        color: rgb(247, 211, 128);
+    }
+  }
+  #btn_theme{
+    background-color: transparent;
+    border: 0px;
+    &:hover{
+        cursor: pointer;
+        color: rgb(247, 211, 128);
+    }
   }

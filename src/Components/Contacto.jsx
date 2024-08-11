@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Contacto() {
   const aboutMe = {
-    imageUrl : "./public/dennys.jpg",
+    imageUrl : "/dennys.jpg",
     email:"moyadeni267@gmail.com",
     number:"+34 642-664-859"
   }

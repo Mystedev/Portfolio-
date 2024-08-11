@@ -1,0 +1,111 @@
+.projects-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0px;
+    padding: 0px;
+    animation: animation 1.1s ease-in;
+    h1{
+        font-size: 2.5rem;
+        background: linear-gradient(90deg,#ffffffde,#12e9ed);
+        text-shadow: none;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0px;
+        #star-project{
+            width: 30px;
+            height: 30px;
+            color: rgb(red, rgb(254, 217, 70), blue);
+        }
+    }
+    .this-project{
+        display: flex;
+        gap: 15px;
+        padding: 15px;
+        width: 700px;
+        background: transparent;
+        .preview{
+            background-color: rgba(0, 0, 0, 0.246);
+            flex-direction: column;
+            width: 800px;
+            height: 300px;
+            border: 1px solid rgba(45, 45, 45, 0.71);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0px 6px rgba(171, 171, 171, 0.304);
+            img{
+                width: 400px;
+                height: 250px;
+                border-radius: 12px;
+                border-top: 1px solid rgba(118, 237, 204, 0.71);
+                border-left: 1px solid rgba(118, 237, 204, 0.71);
+                border-bottom: 1px solid rgba(118, 237, 204, 0.71);
+                border-radius: 12px;
+                box-shadow: 0 0px 6px rgba(171, 171, 171, 0.304);
+                transition: all 0.2s ease-in;
+                cursor: pointer;
+                margin-top: 100px;
+                margin-left: 100px;
+                &:hover{
+                    margin-top: 0px;
+                    margin-left: 0px;
+                }
+            }
+
+        }
+        .info-project{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            h3{
+                font-size: 1.5rem;
+                color: rgba(255, 255, 255, 0.937);
+                font-weight: 600;
+                margin-bottom: 0px;
+                margin-top: 0px;    
+            }
+            p{
+                font-size: 0.9rem;
+            }
+            .stack-used{
+                display: flex;
+                gap: 5px;
+                margin-top: 0px;
+                padding: 5px;
+                height: 50px;
+                img{
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 5px;
+                }
+            }
+            .shortcuts{
+                display: flex;
+                gap: 15px;
+                padding: 5px;
+                .btn-shortcuts{
+                    border-radius: 12px;
+                    background-color: rgba(255, 255, 255, 0.937);
+                    color: rgb(0, 0, 0);
+                    font-size:  1rem;
+                    font-weight: 500;
+                    padding: 8px 15px 8px 15px;
+                    transition: all 0.2s ease-in;
+                    display: flex;
+                    align-items: center;
+                    #icon-shortcuts{
+                        width: 20px;
+                        height: 20px;
+                        margin-left:8px;
+                    }
+                    &&:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

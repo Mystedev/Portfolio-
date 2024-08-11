@@ -1,8 +1,10 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-empty */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import './Styles/Header.css'
-
 function Header(props) {
-    
+
     return (
         <header className='header-section'>
             <a className='index-section' href="#">{props.section1}</a>
