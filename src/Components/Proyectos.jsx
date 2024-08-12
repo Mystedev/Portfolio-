@@ -7,10 +7,6 @@ import { IoLogoGithub } from "react-icons/io5";
 import { IoMdLink } from "react-icons/io";
 
 function Proyectos(props) {
-  /*<a className='btn-shortcuts'>Live 
-      <IoMdLink id='icon-shortcuts'/>
-    </a>
-  */ 
   return (
     <section className='projects-section'>
       <div className='this-project'>
@@ -26,7 +22,7 @@ function Proyectos(props) {
             <img src={props.stack3} />
           </div>
           <div className='shortcuts'>
-            <a className='btn-shortcuts'>Code 
+            <a className='btn-shortcuts' href={props.preview_link}>Code 
               <IoLogoGithub id='icon-shortcuts'/>
             </a>
           </div>

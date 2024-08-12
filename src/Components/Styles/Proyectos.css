@@ -96,6 +96,7 @@
                     transition: all 0.2s ease-in;
                     display: flex;
                     align-items: center;
+                    text-decoration:none;
                     #icon-shortcuts{
                         width: 20px;
                         height: 20px;
