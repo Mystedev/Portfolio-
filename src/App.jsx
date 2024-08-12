@@ -11,39 +11,36 @@ import { MdStars } from "react-icons/md";
 import { RiExternalLinkLine } from "react-icons/ri";
 // Hooks imported
 import { useState } from 'react'
-import { useEffect } from 'react'
 function App(){
-  //Dynamic alert on window title
+  //Show or hide the content on the experience side
+  const [showExperiencia] = useState(true)
+  const [showPresentacion] = useState(true)
+  //Alerta dinamico en el titulo de la ventana
   window.addEventListener('blur', () => {
-    //On change the page ->
-    setTimeout((
-      document.title = 'Hey vuelve!🙋‍♂️'
-    ),1500)
+    //Al cambiar la pagina ->
+    document.title = 'Hey vuelve!🙋‍♂️'
   })
   window.addEventListener('focus', () => {
     //While we stay on the actually page
     document.title = 'dennys.dev'
   })
-  //Show or hide the content on the experience side
-  const [showExperiencia] = useState(true)
-  const [showPresentacion] = useState(true)
   //Render the webpage
   return (
     <main className='custom-app' id=''>
       <Header
-      section1="Presentacion" 
-      section2="Experiencia" 
-      section4="Proyectos"
-      section5="Contacto"
-    />
+        section1="Presentacion" 
+        section2="Experiencia" 
+        section4="Proyectos"
+        section5="Contacto"
+      />
       <section className='introduction-section'>
-        {showPresentacion ? ( <Presentacion /> ) : ('')}
+        {showPresentacion ? 
+        ( <Presentacion /> ) : ('')}
         {showExperiencia ? 
         (<Experiencia 
           position="Tecnico de redes y hardware 💻" 
           data="5/1/2020 - 20/6/2020" />)
-         : ('')
-        }
+         : ('')}
         <div className='projects-section'>
           <h1>Proyectos <MdStars id='star-project'/></h1>
           <Proyectos 
