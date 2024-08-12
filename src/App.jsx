@@ -15,15 +15,6 @@ function App(){
   //Show or hide the content on the experience side
   const [showExperiencia] = useState(true)
   const [showPresentacion] = useState(true)
-  //Alerta dinamico en el titulo de la ventana
-  window.addEventListener('blur', () => {
-    //Al cambiar la pagina ->
-    document.title = 'Hey vuelve!🙋‍♂️'
-  })
-  window.addEventListener('focus', () => {
-    //While we stay on the actually page
-    document.title = 'dennys.dev'
-  })
   //Render the webpage
   return (
     <main className='custom-app' id=''>

@@ -13,7 +13,6 @@ const Presentacion = () => {
   return (
     <div className="container-presentacion">
         <div className="header-container">
-            <img src="" alt="" />
             <button  className='btn-presentacion'>Disponible para trabajar</button>
         </div>
         <h1 className='title-presentacion'>Hey, soy Dennys <FaRegUser id="user-icon" /></h1>

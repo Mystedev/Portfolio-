@@ -83,6 +83,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 0.5s forwards;
+    z-index: 9999;
   }
   @keyframes slideIn {
     from {
@@ -99,4 +100,57 @@
         width: 20px;
         height: 20px;
         color: rgb(151, 249, 210);
+    }
+    @media only screen and (max-width:760px){
+        .contact-section{
+            width: 100%;
+            display: flex;
+            position: relative;
+            left: -5%;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-size: 2.7rem;
+                text-align: center;
+                position: relative;
+                left: -5%;
+            }
+            .info{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+            }    
+            .info a{
+                font-size: 1.5rem;
+                padding: 0.5rem 1rem;
+                border-radius: 35px;
+            }
+            .card-text{
+                width: 90%;
+                padding: 10px;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .notification {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(121, 121, 121, 0.749);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.5s forwards;
+            z-index: 9999;
+            width: fit-content;
+            text-align: center;
+            font-size: 1.5rem;
+
+          }
     }

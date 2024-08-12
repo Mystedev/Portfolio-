@@ -62,19 +62,56 @@
     }
   }
 }
-@media (prefers-color-scheme: dark) {
-  .body.dark-scheme {
-  height: 100%;
-  background: black;
-  color: white;
- }
+@media (max-width: 760px) {
+  .custom-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0px;
+    scroll-behavior: smooth;
+  }
+  .introduction-section{
+    max-width: 450px;
+  }
+  .skills-section{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .projects-section{
+    position: relative;
+    left: -10%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    a{
+      margin-top: 0px;
+    }
+  }
+  .more-info{
+    margin-top: 0px;
+    position: relative;
+    left: -10%;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    padding-left: 25px;
+  }
 }
-body.light-mode {
-  background-color: white;
-  color: black;
-}
-
-body.dark-mode {
-  background-color: black;
-  color: white;
+@media only screen and (max-width:480px){
+  .projects-section{
+    position: relative;
+    left: -10%;
+  }
 }

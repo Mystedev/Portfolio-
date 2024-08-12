@@ -2,11 +2,7 @@
 /* eslint-disable no-unused-vars */
 import './Styles/Contacto.css'
 //CONTACT ICONS
-import { IoMdContact } from "react-icons/io";
-import { BiLogoGmail } from "react-icons/bi";
-import { FaWhatsapp } from "react-icons/fa";
 import { useState } from 'react';
-import { useEffect } from 'react';
 import { MdOutlineNotificationsActive } from "react-icons/md";
 import { FaClipboardList } from "react-icons/fa";
 function Contacto() {

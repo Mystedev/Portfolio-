@@ -3,9 +3,9 @@
     justify-content: center;
     flex-direction: column;
     width: 650px;
-}
-.container-presentacion p{
-    font-size: 18px;
+    p{
+        font-size: 18px;
+    }
 }
 .header-container{
     display: flex;
@@ -102,4 +102,96 @@ span{
   
 .btn-presentacion:hover:before {
     transform: translateX(25em);
+}
+
+@media only screen and (max-width:760px){
+    .container-presentacion{
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            left: -100px;
+            .header-container{
+                .btn-presentacion{
+                    position: relative;
+                    font-size: 26px;
+                    width: 100%;
+                    max-width: 100%;
+                    max-height: 90px;
+                    height: 90px;
+                }
+            }
+            p{
+                font-size: 28px;
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+        .social-network-direct{
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            .socials{
+                font-size: 20px;
+                width: 100%;
+                max-width: 100%;
+                max-height: 90px;
+                height: 40px;
+                border-radius: 30px;
+            }
+        }
+    }
+@media only screen and (max-width:480px){
+    .container-presentacion{
+        width: 40%;
+        p{
+            font-size: 20px;
+            position: relative;
+            left: 25%;
+        }
+    }
+    .header-container{
+        position: relative;
+        left: 25%;
+    }
+    .title-presentacion{
+        font-size: 25px;
+        text-align: center;
+        position: relative;
+        left: 12%;
+        margin-bottom: 10px;
+    }
+    .social-network-direct{
+        position: relative;
+        left: 25%;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .socials{
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 4px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition: all 0.2s ease-in;
+        border-radius: 20px;
+        letter-spacing: 2px;
+    }
+    .btn-presentacion{
+        --green: #1BFD9C;
+        font-size: 15px;
+        padding: 0.7em 2.7em;
+        letter-spacing: 0.06em;
+        position: relative;
+        font-family: 'Cascadia Code';
+        border-radius: 8em;
+        font-weight: bold;
+        height:fit-content;
+    }
 }

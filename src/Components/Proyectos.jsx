@@ -2,9 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './Styles/Proyectos.css'
-import { MdStars } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io5";
-import { IoMdLink } from "react-icons/io";
 
 function Proyectos(props) {
   return (
