@@ -46,7 +46,7 @@ function App(){
           />
           <Proyectos 
             name="Spotify Clon"
-            url="public/spotify.png"
+            url="https://github.com/user-attachments/assets/f95df07c-3fc6-4114-9873-11253b5f84fd"
             description="Clone of the spotify web, where you can search for songs and listen it.
             Pd:*Is only a design, javascript doesn't work yet, it's coming soon*"
             stack="/public/js.png"
