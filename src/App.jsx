@@ -17,6 +17,12 @@ function App(){
   const [showExperiencia] = useState(true)
   const [showPresentacion] = useState(true)
   const [hide , setHide] = useState(false)
+  //Icons from SVGL
+  const iconsImported = {
+    html5 :'https://www.svgrepo.com/show/452228/html-5.svg',
+    css3 :'https://www.svgrepo.com/show/452185/css-3.svg',
+    js :'https://www.svgrepo.com/show/349419/javascript.svg',
+  } 
   // Boton que nos lleva al inicio de la pagina
   const [showHome,setShowHome] = useState(true)
   const btnHome = <button></button>
@@ -39,9 +45,9 @@ function App(){
             url="https://github.com/user-attachments/assets/52ce2421-198c-49fe-b03e-f26371608daa"
             description="Simple weather app used to know the time in a specific country
             and the weather in the next 5 days."
-            stack="/public/js.png"
-            stack2="/public/html.png"
-            stack3="/public/css-3.png"
+            stack={iconsImported.css3}
+            stack2={iconsImported.html5}
+            stack3={iconsImported.js}
             preview_link="https://github.com/Mystedev/Weather-App"
           />
           <Proyectos 
@@ -49,18 +55,18 @@ function App(){
             url="https://github.com/user-attachments/assets/f95df07c-3fc6-4114-9873-11253b5f84fd"
             description="Clone of the spotify web, where you can search for songs and listen it.
             Pd:*Is only a design, javascript doesn't work yet, it's coming soon*"
-            stack="/public/js.png"
-            stack2="/public/html.png"
-            stack3="/public/css-3.png"
+            stack={iconsImported.css3}
+            stack2={iconsImported.html5}
+            stack3={iconsImported.js}
             preview_link="https://github.com/Mystedev/Spotify-Clon-Web"
           />
           <Proyectos 
             name="Tic Tac Toe Game"
             url="https://github.com/user-attachments/assets/637fe574-4ef1-4043-86d7-c746f1c3e540"
             description="Tic Tac Toe game to play and reset fast games, is a little project but hardly"
-            stack="/public/js.png"
-            stack2="/public/html.png"
-            stack3="/public/css-3.png"
+            stack={iconsImported.css3}
+            stack2={iconsImported.html5}
+            stack3={iconsImported.js}
             preview_link="https://github.com/Mystedev/Tic-Tac-Toe"
           />
           <a className='more-info' href="https://github.com/Mystedev">Ver mas <RiExternalLinkLine /></a>
