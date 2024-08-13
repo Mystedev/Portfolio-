@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 650px;
+    width: 800px;
     p{
-        font-size: 18px;
+        font-size: 25px;
     }
 }
 .header-container{
@@ -12,16 +12,17 @@
     justify-items: center;
 }
 .title-presentacion{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    animation: animation 1s  ease-in;
     background: linear-gradient(90deg,#ffffffde,#12e9ed);
         text-shadow: none;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    animation: animation 1s  ease-in;
     #user-icon{
-        width:30px ;
-        height:30px ;
+        width:40px ;
+        height:40px ;
+        color: rgb(104, 199, 221);
     }
 }
 @keyframes ColorTitle{
@@ -43,7 +44,7 @@
 .social-network-direct .socials{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 25px;
     transition: all 0.2s ease-in;
     cursor: pointer;
     background-color: rgba(38, 37, 37, 0.298);
@@ -55,7 +56,7 @@
     justify-content: center;
     gap: 5px;
     transition: all 0.2s ease-in;
-    border-radius: 20px;
+    border-radius: 30px;
     letter-spacing: 2px;
     &:hover{
         background-color: rgba(67, 66, 66, 0.813);
@@ -68,16 +69,17 @@ span{
 
 .btn-presentacion {
     --green: #1BFD9C;
-    font-size: 10px;
+    font-size: 20px;
     padding: 0.7em 2.7em;
     letter-spacing: 0.06em;
     position: relative;
     font-family: 'Cascadia Code';
     border-radius: 8em;
     font-weight: bold;
-    height: 32px;
+    height: fit-content;
     overflow: hidden;
-    transition: all 0.3s;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
     line-height: 1.4em;
     border: 2px solid var(--green);
     background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
@@ -143,31 +145,38 @@ span{
     }
 @media only screen and (max-width:480px){
     .container-presentacion{
-        width: 40%;
+        position: relative;
+        top: 100px;
+        width: 50%;
         p{
-            font-size: 20px;
+            font-size: 18px;
             position: relative;
-            left: 25%;
+            left: 100%;
         }
     }
     .header-container{
         position: relative;
-        left: 25%;
+        left: 50%;
+        display: flex;
     }
     .title-presentacion{
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
         position: relative;
-        left: 12%;
+        left: 100%;
         margin-bottom: 10px;
+        font-size: 1.6rem;
     }
     .social-network-direct{
         position: relative;
-        left: 25%;
-        gap: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        left: 100%;
+        gap: 15px;
+        width: 430px;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        flex-direction: column;
+
     }
     .socials{
         width: 120px;
@@ -191,7 +200,9 @@ span{
         position: relative;
         font-family: 'Cascadia Code';
         border-radius: 8em;
+        width: 240px;
         font-weight: bold;
         height:fit-content;
+        display: none;
     }
 }

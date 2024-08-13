@@ -1,29 +1,29 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import './App.css'
-// Components imported
+// Componentes del proyecto importados desde la estructura de este ->
 import Presentacion from './Components/Presentacion'
 import Header from './Components/Header'
 import Experiencia from './Components/Experiencia'
 import Contacto from './Components/Contacto'
 import Proyectos from './Components/Proyectos'
+// Iconos importados al proyecto desde -> https://react-icons.github.io/react-icons/
 import { MdStars } from "react-icons/md";
 import { RiExternalLinkLine } from "react-icons/ri";
-// Hooks imported
+// Estados importados al proyecto
 import { useState } from 'react'
 function App(){
-  //Show or hide the content on the experience side
+  // Muestra o oculta el contenido de la página utilizando <-Estados->
   const [showExperiencia] = useState(true)
   const [showPresentacion] = useState(true)
-  //Render the webpage
+  const [hide , setHide] = useState(false)
+  // Boton que nos lleva al inicio de la pagina
+  const [showHome,setShowHome] = useState(true)
+  const btnHome = <button></button>
+  {/*RENDERIZADO DE LA APLICACIÓN PORTFOLIO EN REACT*/}
   return (
-    <main className='custom-app' id=''>
-      <Header
-        section1="Presentacion" 
-        section2="Experiencia" 
-        section4="Proyectos"
-        section5="Contacto"
-      />
+    <main className='custom-app' id='top'>
+      <Header className="header-section"/>
       <section className='introduction-section'>
         {showPresentacion ? 
         ( <Presentacion /> ) : ('')}
@@ -46,7 +46,7 @@ function App(){
           />
           <Proyectos 
             name="Spotify Clon"
-            url="https://private-user-images.githubusercontent.com/138665791/345059188-5aa31808-4e1e-4482-83f5-d3f93384c2f0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjMzODAxOTYsIm5iZiI6MTcyMzM3OTg5NiwicGF0aCI6Ii8xMzg2NjU3OTEvMzQ1MDU5MTg4LTVhYTMxODA4LTRlMWUtNDQ4Mi04M2Y1LWQzZjkzMzg0YzJmMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxMVQxMjM4MTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mOTU5MDk4MzE0MWFlNDQ1NzA4NjlkODlkYzhlOTEyMzE3OGM0ZDE2ZGE0Y2U0NjE2ZTNlNDIyMGQwN2U0ZmI1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.jKGHYCiyUK3LdvlRaU_pmS3KrT8xg8q9jcXtVhB6-Mk"
+            url="public/spotify.png"
             description="Clone of the spotify web, where you can search for songs and listen it.
             Pd:*Is only a design, javascript doesn't work yet, it's coming soon*"
             stack="/public/js.png"
@@ -72,5 +72,4 @@ function App(){
     </main>
   )
 }
-
 export default App

@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react'
+// Estados importados de 'React'
+import React, { useState } from 'react'
+// Estilos importados al componente
 import './Styles/Proyectos.css'
+// Iconos importados desde -> https://react-icons.github.io/react-icons/
 import { IoLogoGithub } from "react-icons/io5";
-
-function Proyectos(props) {
+// Definicion del componente 'Proyectos'
+function Proyectos(props) {  
+  {/*RENDERIZADO DEL COMPONENTE PROYECTOS*/}
   return (
-    <section className='projects-section'>
+    <section className='projects-section' id='proyectos'>
       <div className='this-project'>
         <div className='preview'>
           <img src={props.url} alt="Preview" title='Preview of project' className='img-preview'/>

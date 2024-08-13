@@ -2,17 +2,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 650px;
+    width: 800px;
     h1{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         background: linear-gradient(90deg,#ffffffde,#12e9ed);
         text-shadow: none;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         #work-exprience{
-            width: 30px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
+            color: rgba(116, 242, 242, 0.937);
         }
     }
     .introduction{
@@ -26,20 +27,20 @@
         backdrop-filter: blur(140px);
         .card-experience{
             h3{
-                font-size: 1.5rem;
+                font-size: 1.7rem;
                 color: rgba(255, 255, 255, 0.937);
             }
             h4{
-                font-size: 1.2rem;
-                color: rgba(242, 173, 116, 0.937);
+                font-size: 1.4rem;
+                color: rgba(242, 215, 116, 0.937);
             }
         }
         .description{
-            font-size: 19px;
+            font-size: 25px;
         }
     }
     p{
-        font-size: 18px;
+        font-size: 25px;
         margin: 0px;
     }
 }
@@ -71,7 +72,15 @@
 @media only screen and (max-width:480px){
     .section-experiencia{
         position: relative;
+        top: 90px;
         left: 10%;
-        width: 40%;
+        width: 65%;
+        h1{
+            font-size: 1.7rem;
+            #work-exprience{
+                width: 30px;
+                height: 20px;
+            }
+        }
     }
 }

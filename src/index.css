@@ -15,16 +15,25 @@
   top: 0;
   height: 100vh;
   width: 100vw;
-  background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(45, 51, 123, 0.892), rgba(1, 3, 19, 0.648)) no-repeat;
+  background: radial-gradient(ellipse 80% 80% at 50% -10%, rgb(52, 58, 105), rgba(1, 3, 19, 0.648));
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   overflow-x: hidden;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 /*background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%);*/
-
+:root::-webkit-scrollbar{
+  width: 8px;
+  background-color: rgb(82, 82, 82);
+}
+:root::-webkit-scrollbar-thumb{
+  background-color: rgb(249, 181, 133);
+  width: 5px;
+  border-radius: 15px;
+}
 
 
 
