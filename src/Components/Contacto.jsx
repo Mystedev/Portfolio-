@@ -15,7 +15,7 @@ function Contacto() {
   const aboutMe = {
     imageUrl : "/dennys.jpg",
     email:"moyadeni267@gmail.com",
-    number:"+34 642-664-859"
+    number:"+34 690 95 50 45"
   }
   // Boton para voler al inicio de la pagina
   const turnUp = <button></button>
