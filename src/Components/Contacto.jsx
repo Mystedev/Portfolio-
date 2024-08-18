@@ -53,7 +53,7 @@ function Contacto() {
       </div> : ''}
       {turnUp ? <a className='turn_back' href='#top'>{turnUpBtn}</a> : ''}
       <div className='card-text'>
-        <p>Soy un joven apasionado por el <p className='stack'>desarrollo de software y el desarrollo web</p>, actualmente en formación continua para perfeccionar mis habilidades y conocimientos en estas áreas. A lo largo de mi trayectoria educativa, <strong className='strong-point'>he trabajado en diversos proyectos que me han permitido adquirir experiencia práctica y entender las necesidades y desafíos del desarrollo moderno.</strong><br/><p>Aspiro a contribuir a proyectos innovadores y a colaborar con equipos dinámicos donde pueda seguir aprendiendo y compartiendo mi pasión por la tecnología.</p></p>
+        <p>Soy un joven apasionado por el <span>desarrollo de software y el desarrollo web</span>, actualmente en formación continua para perfeccionar mis habilidades y conocimientos en estas áreas. A lo largo de mi trayectoria educativa, <strong className='strong-point'>he trabajado en diversos proyectos que me han permitido adquirir experiencia práctica y entender las necesidades y desafíos del desarrollo moderno.</strong><br/><p>Aspiro a contribuir a proyectos innovadores y a colaborar con equipos dinámicos donde pueda seguir aprendiendo y compartiendo mi pasión por la tecnología.</p></p>
       </div>
     </section>
   )
