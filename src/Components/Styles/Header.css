@@ -54,11 +54,11 @@
   }
   .header-section.scrolled{
     border-radius: 30px;
-    background-color: rgba(73, 73, 73, 0.902);
+    background-color: rgba(60, 60, 60, 0.879);
     opacity: 0.8;
     transition: all .2s ease-in;
     top: 10px;
-    box-shadow: 0 0 10px rgba(121, 121, 121, 0.749);
+    box-shadow: 0 0 10px rgba(209, 209, 209, 0.749);
     height: fit-content;
   }
   .header-section.notScrolled{
