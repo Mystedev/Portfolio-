@@ -11,7 +11,7 @@
     padding: 5px 10px;
   }
   .index-section{
-    color: rgb(255, 255, 255);
+    color: rgb(247, 211, 128);
     text-decoration: none;
     font-size: 1.1rem;
     padding: 0.5rem 1rem;
@@ -54,7 +54,7 @@
   }
   .header-section.scrolled{
     border-radius: 30px;
-    background-color: rgba(60, 60, 60, 0.879);
+    background-color: rgba(230, 220, 220, 0.35);
     opacity: 0.8;
     transition: all .2s ease-in;
     top: 10px;

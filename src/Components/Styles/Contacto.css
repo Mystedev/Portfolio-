@@ -1,6 +1,7 @@
 .contact-section{
     display: flex;
     flex-direction: column;
+    gap: 5px;
     width: 800px;
     h3{
         font-size: 2.7rem;
@@ -16,8 +17,8 @@
         gap: 4px;
     }
     img{
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
     }
     .info a{

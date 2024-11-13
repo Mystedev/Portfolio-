@@ -7,8 +7,6 @@ import { useState } from 'react';
 import { MdOutlineNotificationsActive } from "react-icons/md";
 import { FaClipboardList } from "react-icons/fa";
 import { FaArrowTurnUp } from "react-icons/fa6";
-// Servicio para enviar y recibir correos
-import { Resend } from 'resend';
 // Definicion del componente 'Contacto'
 function Contacto() {
   // Mi información personal
