@@ -7,13 +7,13 @@
     z-index: 99;
     transition: all .2s ease-in;
     border-radius: 35px;
-    height:55px;
-    padding: 5px 10px;
+    height:35px;
+    padding: 5px 5px;
   }
   .index-section{
-    color: rgb(247, 211, 128);
+    color: rgb(255, 254, 254);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
     transition: all 0.2s ease-in-out;
     margin: 0.5rem;

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import './App.css'
 // Componentes del proyecto importados desde la estructura de este ->
 import Presentacion from './Components/Presentacion'
@@ -40,6 +41,7 @@ function App(){
          : ('')}
         <div className='projects-section'>
           <h1>Proyectos <MdStars id='star-project'/></h1>
+          <SpeedInsights />
           <Proyectos 
             name="Weather App" 
             url="https://github.com/user-attachments/assets/52ce2421-198c-49fe-b03e-f26371608daa"
