@@ -41,7 +41,6 @@ function App(){
          : ('')}
         <div className='projects-section'>
           <h1>Proyectos <MdStars id='star-project'/></h1>
-          <SpeedInsights />
           <Proyectos 
             name="Weather App" 
             url="https://github.com/user-attachments/assets/52ce2421-198c-49fe-b03e-f26371608daa"
