@@ -11,6 +11,7 @@ import Proyectos from './Components/Proyectos'
 // Iconos importados al proyecto desde -> https://react-icons.github.io/react-icons/
 import { MdStars } from "react-icons/md";
 import { RiExternalLinkLine } from "react-icons/ri";
+import { MdOutlineWork } from "react-icons/md";
 // Estados importados al proyecto
 import { useState } from 'react'
 function App(){
@@ -26,7 +27,6 @@ function App(){
   } 
   // Boton que nos lleva al inicio de la pagina
   const [showHome,setShowHome] = useState(true)
-  const btnHome = <button></button>
   {/*RENDERIZADO DE LA APLICACIÓN PORTFOLIO EN REACT*/}
   return (
     <main className='custom-app' id='top'>
@@ -34,11 +34,20 @@ function App(){
       <section className='introduction-section'>
         {showPresentacion ? 
         ( <Presentacion /> ) : ('')}
-        {showExperiencia ? 
-        (<Experiencia 
+        <h1 className='title-intro'>Experiencia laboral <MdOutlineWork id='work-exprience' /></h1>
+        <Experiencia 
           position="Tecnico de redes y hardware 💻" 
-          data="5/1/2020 - 20/6/2020" />)
-         : ('')}
+          data="5/1/2020 - 20/6/2020"
+          description="Mantenimiento de equipos y software, 
+          gestión y administración de redes y reparación de equipos dañados. 
+          Me ocupaba de conectar entre sí una serie de equipos de una sala de estudio mediante 
+          redes con IPs estáticas y administrar todo el entorno de red." />
+        <Experiencia 
+          position="Desarrollador de Software 💻"
+          data="8/10/2024 - Actualidad"
+          description="Desarrollo de aplicaciones en plataformas Android con Flutter utilizando el entorno
+          y la base de datos de Odoo 17. Desarrolle aplicaciones UI y Backend con tecnologías como Dart y peticiones HTTP POST/GET."
+        />
         <div className='projects-section'>
           <h1>Proyectos <MdStars id='star-project'/></h1>
           <Proyectos 
